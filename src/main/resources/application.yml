@@ -1,0 +1,17 @@
+logging:
+  level:
+    org.springframework.security: INFO
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000
+
+server:
+  port: 8761
+spring:
+  application:
+    name: registry
